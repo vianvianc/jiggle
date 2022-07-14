@@ -18,4 +18,21 @@ document.getElementById("button4").addEventListener("click", function(){
 });
 
 
+let on = true;
 
+function toggle() {
+    if (on) { fadeOut(); } else { fadeIn(); }
+    on = !on;
+}
+
+function fadeOut(){
+    document.getElementById("box").style.transition = "opacity 0.5s linear 0s";
+    document.getElementById("box").style.opacity = 0;
+    document.getElementById("button3").innerHTML = "Fade In";
+}
+
+function fadeIn(){
+    document.getElementById("box").style.transition = "opacity 0.5s linear 0s";
+    document.getElementById("box").style.opacity = 1;
+    document.getElementById("button3").innerHTML = "Fade Out";
+}
