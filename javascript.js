@@ -26,13 +26,13 @@ function toggle() {
 }
 
 function fadeOut(){
-    document.getElementById("box").style.transition = "opacity 0.5s linear 0s";
+    document.getElementById("box").style.transition = "opacity 0.75s linear 0s";
     document.getElementById("box").style.opacity = 0;
     document.getElementById("button3").innerHTML = "Fade In";
 }
 
 function fadeIn(){
-    document.getElementById("box").style.transition = "opacity 0.5s linear 0s";
+    document.getElementById("box").style.transition = "opacity 0.75s linear 0s";
     document.getElementById("box").style.opacity = 1;
     document.getElementById("button3").innerHTML = "Fade Out";
 }
